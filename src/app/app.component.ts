@@ -15,7 +15,7 @@ export class AppComponent {
   private subscription: Subscription;
 
   start(){
-    let timer = TimerObservable.create(0, 10);
+    let timer = TimerObservable.create(0, 1000);
     this.subscription = timer.subscribe(t => {
       this.ss+=1;
       if(this.ss==60){
